@@ -1,0 +1,16 @@
+  <!-- Starts index -->
+	<div class="row">
+		<table class="twelve columns">
+			<tr>
+				<th>Link Name</th>
+				<th>Submitted By</th>
+				<th>Date</th>
+					<% @items << Link.all.each do |item| %>
+					<tr>
+						<td><a href="<%= item.url %>"><%= item.link_name %></a></td> <td><%= item.submitted_by %></td> <td><%= item.date_submitted %></td>
+					<% end %>
+					</tr>
+		</table>
+  </div> <!-- End row -->
+
+<!-- Ends index -->

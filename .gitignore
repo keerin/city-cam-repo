@@ -1,0 +1,7 @@
+# Exclude local bundle files
+
+/.bundle/*
+
+# Exclude and local db files
+
+*sqlite3*
