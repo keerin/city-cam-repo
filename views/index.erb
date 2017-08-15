@@ -7,7 +7,7 @@
 				<th>Date</th>
 					<% @items << Link.all.each do |item| %>
 					<tr>
-						<td><a href="<%= item.url %>"><%= item.link_name %></a></td> <td><%= item.submitted_by %></td> <td><%= item.date_submitted.strftime("%d/%m/%Y") %></td>
+						<td><a href="<%= item.url %>" target="_blank" rel="nofollow"><%= item.link_name %></a></td> <td><%= item.submitted_by %></td> <td><%= item.date_submitted.strftime("%d/%m/%Y") %></td>
 					<% end %>
 					</tr>
 		</table>
