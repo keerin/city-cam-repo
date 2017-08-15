@@ -430,3 +430,7 @@ there.
 .logo{
 	margin-top: 4rem;
 	margin-bottom: 4rem; }
+
+.logo h1 a{
+color:black;
+text-decoration: none; }
